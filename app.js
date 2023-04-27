@@ -7,4 +7,13 @@ function replaceFirstItem(){
     firstItem.replaceWith(li);
 }
 
+
+function replaceSecondItem(){
+    const secondItem = document.querySelector('li:nth-child(2)');
+
+    secondItem.outerHTML = '<li>Replaced Second</li>';
+}
+
+
 replaceFirstItem();
+replaceSecondItem();
